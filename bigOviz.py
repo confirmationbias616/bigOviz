@@ -173,9 +173,8 @@ def main():
                 continue
             elif pause_for_user_input == "n":
                 quit()
-
-    # not sure if we could deletethis line below... to be tested
-    # plt.pause(1000)
+    # pause when everything is done so that user can still look at the plot (should find better soltion)
+    plt.pause(1000)
 
 
 if __name__ == "__main__":
