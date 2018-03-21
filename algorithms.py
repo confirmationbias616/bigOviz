@@ -21,26 +21,6 @@ def merge_lists_scan(list1, list2):
 
     return merged_list
 
-'''
-def merge_lists_pop(list1, list2):
-    merged_list = []
-    listA = list1.copy()
-    listB = list2.copy()
-
-    while len(listA) > 0 or len(listB) > 0:
-        if len(listB) == 0:
-            while len(listA) > 0:
-                merged_list.append(listA.pop(0))
-        elif len(listA) == 0:
-            while len(listB) > 0:
-                merged_list.append(listB.pop(0))
-        elif listA[0] <= listB[0]:
-            merged_list.append(listA.pop(0))
-        elif listA[0] > listB[0]:
-            merged_list.append(listB.pop(0))
-
-    return merged_list
-'''
 
 def merge_lists_py(list1, list2):
     merged_list = sorted(list1 + list2)
